@@ -1,0 +1,1 @@
+# smart-seat-allocator-ai
