@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Smart Seat Allocator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Smart Seat Allocator</h1>
+
+<input id="name" placeholder="Student Name">
+
+<select id="dept">
+<option value="">Select Department</option>
+<option value="CSE">CSE</option>
+<option value="ECE">ECE</option>
+<option value="IT">IT</option>
+<option value="MECH">MECH</option>
+<option value="EEE">EEE</option>
+</select>
+
+<button onclick="addStudent()">Add Student</button>
+<button onclick="allocateSeats()">Allocate Seats</button>
+<button onclick="generateStudents()">Generate 30 Students</button>
+
+<input type="file" id="fileInput" accept=".csv">
+<button onclick="loadCSV()">Upload Dataset</button>
+<h2>Students</h2>
+<ul id="studentList"></ul>
+
+<h2>Classroom Seating Plan</h2>
+
+<h3 class="board">CLASS BOARD</h3>
+
+<div class="classroom">
+
+<div class="door">DOOR</div>
+
+<div id="seats"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
